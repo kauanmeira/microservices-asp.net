@@ -17,7 +17,6 @@ namespace GeekShopping.ProductAPI.Repository
             _mapper = mapper;
         }
 
-
         public async Task<IEnumerable<ProductDTO>> FindAll()
         {
             List<Product> products = await _context.Products.ToListAsync();
@@ -27,22 +26,42 @@ namespace GeekShopping.ProductAPI.Repository
         public async Task<ProductDTO> FindById(long id)
         {
             Product product =
-            await _context.Products.Where(p => p.id == id).FirstOrDefaultAsync();
+                await _context.Products.Where(p => p.Id == id)
+                .FirstOrDefaultAsync();
             return _mapper.Map<ProductDTO>(product);
         }
 
-        public Task<ProductDTO> Create(ProductDTO dto)
+        public async Task<ProductDTO> Create(ProductDTO vo)
         {
-            throw new NotImplementedException();
+            Product product = _mapper.Map<Product>(vo);
+            _context.Products.Add(product);
+            await _context.SaveChangesAsync();
+            return _mapper.Map<ProductDTO>(product);
         }
-        public Task<ProductDTO> Update(ProductDTO dto)
+        public async Task<ProductDTO> Update(ProductDTO vo)
         {
-            throw new NotImplementedException();
+            Product product = _mapper.Map<Product>(vo);
+            _context.Products.Update(product);
+            await _context.SaveChangesAsync();
+            return _mapper.Map<ProductDTO>(product);
         }
 
-        public Task<bool> Delete(long id)
+        public async Task<bool> Delete(long id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Product product =
+                await _context.Products.Where(p => p.Id == id)
+                    .FirstOrDefaultAsync();
+                if (product == null) return false;
+                _context.Products.Remove(product);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
     }

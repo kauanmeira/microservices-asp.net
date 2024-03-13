@@ -60,7 +60,7 @@ namespace GeekShopping.ProductAPI.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Product");
+                    b.ToTable("Product", (string)null);
                 });
 #pragma warning restore 612, 618
         }

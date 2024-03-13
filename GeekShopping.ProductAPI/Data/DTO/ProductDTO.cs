@@ -2,11 +2,11 @@
 {
     public class ProductDTO
     {
-        public long Id;
-        public string Name;
-        public decimal Price;
-        public string Description;
-        public string CategoryName;
-        public string ImageURL;
+        public long Id { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+        public string Description { get; set; }
+        public string CategoryName { get; set; }
+        public string ImageURL { get; set; }
     }
 }
