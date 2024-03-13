@@ -39,8 +39,8 @@ namespace GeekShopping.ProductAPI.Controllers
         {
             if (dto == null) return BadRequest();
             var product = await _repository.Create(dto);
-            return Ok(product);
-        } 
+            return CreatedAtAction(nameof(FindById), new { id = product.Id }, product);
+        }
 
         [HttpPut]
         public async Task<ActionResult<ProductDTO>> Update(ProductDTO dto)
