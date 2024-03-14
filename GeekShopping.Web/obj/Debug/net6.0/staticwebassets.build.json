@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pmJH1mGYYM1VM/iuNNqFy4P7hlWs/PuZhI65bdkqNG4=",
+  "Hash": "1qT5A3QRrfSbsl0fMn5R3qziw1EgcpUCqwMxnsKOYts=",
   "Source": "GeekShopping.Web",
   "BasePath": "_content/GeekShopping.Web",
   "Mode": "Default",
@@ -68,12 +68,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\source\\repos\\GeekShopping\\GeekShopping.Web\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\GeekShopping\\GeekShopping.Web\\wwwroot\\images\\favicon.png",
       "SourceId": "GeekShopping.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\GeekShopping\\GeekShopping.Web\\wwwroot\\",
       "BasePath": "_content/GeekShopping.Web",
-      "RelativePath": "favicon.ico",
+      "RelativePath": "images/favicon.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,7 +82,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
+      "OriginalItemSpec": "wwwroot\\images\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\GeekShopping\\GeekShopping.Web\\wwwroot\\images\\geek_shopping.png",
+      "SourceId": "GeekShopping.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\GeekShopping\\GeekShopping.Web\\wwwroot\\",
+      "BasePath": "_content/GeekShopping.Web",
+      "RelativePath": "images/geek_shopping.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\geek_shopping.png"
     },
     {
       "Identity": "C:\\Users\\Usuario\\source\\repos\\GeekShopping\\GeekShopping.Web\\wwwroot\\js\\site.js",

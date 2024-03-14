@@ -9,8 +9,12 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\source\\repos\\GeekShopping\\GeekShopping.Web\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "C:\\Users\\Usuario\\source\\repos\\GeekShopping\\GeekShopping.Web\\wwwroot\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\source\\repos\\GeekShopping\\GeekShopping.Web\\wwwroot\\images\\geek_shopping.png",
+      "PackagePath": "staticwebassets\\images\\geek_shopping.png"
     },
     {
       "Id": "C:\\Users\\Usuario\\source\\repos\\GeekShopping\\GeekShopping.Web\\wwwroot\\js\\site.js",
